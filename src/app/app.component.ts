@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive, Router } from '@angular/router';
 import { DemoAngularMaterailModule } from './DemoAngularMaterialModule';
 import { StorageService } from './auth/services/storage/storage.service';
-import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
