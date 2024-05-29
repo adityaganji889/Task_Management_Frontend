@@ -13,6 +13,7 @@ Built a Task Management Website where admin can monitor assigned tasks to other 
 * Currently website is responsive for Tabs, Laptops, Computer Screens.
 
 ## Backend Schema Diagram:
+![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/5dc9c820-061b-4c5f-890e-8dd772db940b)
 
 
 ## Tech Stack Used:
@@ -35,4 +36,12 @@ https://task-management-frontend-neon.vercel.app
 https://github.com/adityaganji889/Task_Management_Backend
 
 ## Demonstration:
+
+![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/52deb7b3-bec6-4d1d-b348-f10e44ab214e)
+![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/e27c1ff4-afd6-4a8e-bfc1-ef96f4ef35d6)
+![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/accef9a5-47f4-4143-9230-1df8fba1ee6b)
+![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/10abaf57-516b-4552-820e-497285a604f7)
+![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/4ab372a9-34d6-4fa5-a307-903c6405b7c9)
+
+
 
