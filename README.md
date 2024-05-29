@@ -10,6 +10,7 @@ Built a Task Management Website where admin can monitor assigned tasks to other 
 * Protected and Public Routes based on User roles implemented for both frontend and backend.
 * SQL Database is used with model cascading.
 * Deployed using Vercel for Frontend and Railway for Backend.
+* Currently website is responsive for Tabs, Laptops, Computer Screens.
 
 ## Backend Schema Diagram:
 
