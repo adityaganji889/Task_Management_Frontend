@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AdminService } from '../../services/admin.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,9 +11,13 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class DashboardComponent {
    
   listOfTasks: any = [];
+  searchForm!: FormGroup;
 
-  constructor(private adminService: AdminService,private snackBar: MatSnackBar){
+  constructor(private adminService: AdminService,private snackBar: MatSnackBar, private fb:FormBuilder){
     this.getAllTasks();
+    this.searchForm = this.fb.group({
+      title: [null]
+    })
   }
 
   getAllTasks(){
@@ -47,5 +52,30 @@ export class DashboardComponent {
         })
       }
     })
+  }
+
+  searchTask(){
+    this.listOfTasks = [];
+    const title = this.searchForm.get('title')!.value;
+    console.log(title);
+    if(title==""){
+      this.getAllTasks();
+    }
+    else{
+      this.adminService.searchTaskByTitle(title).subscribe((res)=>{
+        if(res.success){
+          this.listOfTasks = res.tasks;
+          this.snackBar.open(res.message,"Close",{
+            duration: 5000
+          })
+        }
+        else{
+          this.snackBar.open(res.message,"Close",{
+            duration: 5000,
+            panelClass: "error-snackbar"
+          })
+        }
+      })
+    }
   }
 }

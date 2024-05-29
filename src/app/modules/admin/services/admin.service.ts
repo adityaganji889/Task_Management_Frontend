@@ -71,6 +71,16 @@ export class AdminService {
     };
     return this.http.put(BASE_URL+"/api/admin/updateTask/"+id,taskDTO,httpOptions);
   }
+
+  searchTaskByTitle(title:string):Observable<any> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${StorageService.getToken()}`
+      })
+    };
+    return this.http.get(BASE_URL+"/api/admin/searchTasksByTitle/"+title,httpOptions);
+  }
   
 
 }

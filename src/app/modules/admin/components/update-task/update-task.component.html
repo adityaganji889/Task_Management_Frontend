@@ -58,6 +58,17 @@
             </mat-error>
           </mat-form-field>
           <mat-form-field appearance="outline" class="form-field">
+            <mat-label>Select the Task Status</mat-label>
+            <mat-select formControlName="taskStatus" name="taskStatus">
+              <mat-option *ngFor="let status of listOfTaskStatus" [value]="status">
+                {{ status }}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="taskUpdateForm.get('taskStatus')?.hasError('required')">
+              Task Status is required
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="form-field">
             <mat-label>Select the User</mat-label>
             <mat-select formControlName="userId" name="userId">
               <mat-option *ngFor="let user of listOfUsers" [value]="user.id">
@@ -68,17 +79,6 @@
               User is required
             </mat-error>
           </mat-form-field>
-          <!-- <mat-form-field appearance="outline" class="form-field">
-            <mat-label>Select the Task Status</mat-label>
-            <mat-select formControlName="taskStatus" name="taskStatus">
-              <mat-option *ngFor="let status of listOfTaskStatus" [value]="status">
-                {{ status }}
-              </mat-option>
-            </mat-select>
-            <mat-error *ngIf="taskUpdateForm.get('taskStatus')?.hasError('required')">
-              Task Status is required
-            </mat-error>
-          </mat-form-field> -->
           <button
             mat-raised-button
             color="primary"

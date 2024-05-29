@@ -39,7 +39,7 @@ export class UpdateTaskComponent {
       description: [null, [Validators.required]],
       dueDate: [null, [Validators.required]],
       priority: [null, [Validators.required]],
-      // taskStatus: [null, [Validators.required]],
+      taskStatus: [null, [Validators.required]],
     });
   }
 
@@ -54,6 +54,7 @@ export class UpdateTaskComponent {
           description: this.task.description,
           dueDate: this.task.dueDate,
           priority: this.task.priority,
+          taskStatus: this.task.taskStatus
         });
         this.snackBar.open(res.message, 'Close', {
           duration: 5000,
@@ -83,7 +84,7 @@ export class UpdateTaskComponent {
       dueDate: this.taskUpdateForm.get('dueDate')?.value,
       priority: this.taskUpdateForm.get('priority')?.value,
       userId: this.taskUpdateForm.get('userId')?.value,
-      taskStatus: this.task.taskStatus
+      taskStatus: this.taskUpdateForm.get('taskStatus')?.value
     }).subscribe((res)=>{
        if(res.success){
         this.snackBar.open(res.message,"Close",{
