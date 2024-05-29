@@ -1,27 +1,37 @@
-# TaskManagementSystem
+# Task Management Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Built a Task Management Website where admin can monitor assigned tasks to other users.
 
-## Development server
+## Features:
+* Implemented JWT Authentication - user can register, login, logout.
+* Role Based Users - Admin, User.
+* Admin user can assign tasks, can update it's details like title, description, priority, due date, assignee user, task status, can delete it, can see all of them, can see each of them seperately, can search them based on task title also.
+* User can see their list of assigned tasks and can update their status accordingly.
+* Protected and Public Routes based on User roles implemented for both frontend and backend.
+* SQL Database is used with model cascading.
+* Deployed using Vercel for Frontend and Railway for Backend.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Backend Schema Diagram:
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tech Stack Used:
+#### Front-End:
+<img alt="Angular" src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white"/> <img alt="Angular" src="https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white"/> 
 
-## Build
+#### Back-End:
+<img alt="Spring-Boot" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring-Boot&logoColor=white"/> <img alt="Hibernate" src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white"/> 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Databases:
+<img alt="Oracle" src ="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"/>
 
-## Running unit tests
+## Deployed Version:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+https://task-management-frontend-neon.vercel.app
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Backend Repo Link:
 
-## Further help
+https://github.com/adityaganji889/Task_Management_Backend
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Demonstration:
+
