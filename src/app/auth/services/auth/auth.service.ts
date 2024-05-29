@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = "https://taskmanagementbackend-production-4883.up.railway.app"
 
 @Injectable({
   providedIn: 'root'
