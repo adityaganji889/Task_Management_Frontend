@@ -5,15 +5,15 @@ Built a Task Management Website where admin can monitor assigned tasks to other 
 ## Features:
 * Implemented JWT Authentication - user can register, login, logout.
 * Role Based Users - Admin, User.
-* Admin user can assign tasks, can update it's details like title, description, priority, due date, assignee user, task status, can delete it, can see all of them, can see each of them seperately, can search them based on task title also.
-* User can see their list of assigned tasks and can update their status accordingly.
+* Admin user can assign tasks, can update it's details like title, description, priority, due date, assignee user, task status, can delete it, can see all of them, can see each of them seperately, can search them based on task title, can comment on tasks also.
+* User can see their list of assigned tasks and can update their status, as well as can comment on their assigned tasks also.
 * Protected and Public Routes based on User roles implemented for both frontend and backend.
 * SQL Database is used with model cascading.
 * Deployed using Vercel for Frontend and Railway for Backend.
 * Currently website is responsive for Tabs, Laptops, Computer Screens.
 
 ## Backend Schema Diagram:
-![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/5dc9c820-061b-4c5f-890e-8dd772db940b)
+![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/a644c689-44f9-492f-a12e-3c1342c5870d)
 
 
 ## Tech Stack Used:
@@ -42,6 +42,9 @@ https://github.com/adityaganji889/Task_Management_Backend
 ![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/accef9a5-47f4-4143-9230-1df8fba1ee6b)
 ![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/10abaf57-516b-4552-820e-497285a604f7)
 ![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/4ab372a9-34d6-4fa5-a307-903c6405b7c9)
+![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/6ccc4dc3-3c98-4d7e-af30-e14eec8593cf)
+![image](https://github.com/adityaganji889/Task_Management_Frontend/assets/88584574/03cc5b7d-dbbb-42dc-9d24-0526b2a3315b)
+
 
 
 
