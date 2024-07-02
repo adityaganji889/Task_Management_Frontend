@@ -10,6 +10,7 @@ import { PostTaskComponent } from './components/post-task/post-task.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { UpdateTaskComponent } from './components/update-task/update-task.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { ViewTaskComponent } from './components/view-task/view-task.component';
 // import { MatDatepickerModule } from '@angular/material/datepicker';
 
 
@@ -17,7 +18,8 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   declarations: [
     DashboardComponent,
     PostTaskComponent,
-    UpdateTaskComponent
+    UpdateTaskComponent,
+    ViewTaskComponent
   ],
   imports: [
     CommonModule,

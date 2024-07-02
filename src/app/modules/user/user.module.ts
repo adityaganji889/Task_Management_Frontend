@@ -7,11 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { DemoAngularMaterailModule } from '../../DemoAngularMaterialModule';
+import { ViewTaskComponent } from './components/view-task/view-task.component';
 
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    ViewTaskComponent
   ],
   imports: [
     CommonModule,
